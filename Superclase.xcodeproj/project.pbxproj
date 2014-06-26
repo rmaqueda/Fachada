@@ -56,8 +56,8 @@
 		8CAE5963195B1D7000F76818 /* SuperclaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperclaseTests-Info.plist"; sourceTree = "<group>"; };
 		8CAE5965195B1D7000F76818 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8CAE5967195B1D7000F76818 /* SuperclaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperclaseTests.m; sourceTree = "<group>"; };
-		8CAE5971195B1E5000F76818 /* MotorBusqueda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotorBusqueda.h; sourceTree = "<group>"; };
-		8CAE5972195B1E5000F76818 /* MotorBusqueda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MotorBusqueda.m; sourceTree = "<group>"; };
+		8CAE5971195B1E5000F76818 /* MotorBusqueda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MotorBusqueda.h; path = Superclase/MotorBusqueda.h; sourceTree = "<group>"; };
+		8CAE5972195B1E5000F76818 /* MotorBusqueda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MotorBusqueda.m; path = Superclase/MotorBusqueda.m; sourceTree = "<group>"; };
 		8CAE5974195B226E00F76818 /* BusquedaPadre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BusquedaPadre.h; sourceTree = "<group>"; };
 		8CAE5975195B226E00F76818 /* BusquedaPadre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BusquedaPadre.m; sourceTree = "<group>"; };
 		8CAE5977195B252C00F76818 /* FacebookContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookContact.h; sourceTree = "<group>"; };
@@ -88,6 +88,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C959D2C195BE163000435FD /* Fachada */ = {
+			isa = PBXGroup;
+			children = (
+				8CAE5971195B1E5000F76818 /* MotorBusqueda.h */,
+				8CAE5972195B1E5000F76818 /* MotorBusqueda.m */,
+				8C959D2E195BE1AB000435FD /* Clientes */,
+			);
+			name = Fachada;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8C959D2D195BE18C000435FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8CAE5951195B1D7000F76818 /* ViewController.h */,
+				8CAE5952195B1D7000F76818 /* ViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8C959D2E195BE1AB000435FD /* Clientes */ = {
+			isa = PBXGroup;
+			children = (
+				8CAE5974195B226E00F76818 /* BusquedaPadre.h */,
+				8CAE5975195B226E00F76818 /* BusquedaPadre.m */,
+				8CAE5977195B252C00F76818 /* FacebookContact.h */,
+				8CAE5978195B252C00F76818 /* FacebookContact.m */,
+			);
+			name = Clientes;
+			path = Superclase;
+			sourceTree = "<group>";
+		};
 		8CAE5930195B1D7000F76818 = {
 			isa = PBXGroup;
 			children = (
@@ -123,17 +155,11 @@
 			children = (
 				8CAE594B195B1D7000F76818 /* AppDelegate.h */,
 				8CAE594C195B1D7000F76818 /* AppDelegate.m */,
-				8CAE5974195B226E00F76818 /* BusquedaPadre.h */,
-				8CAE5975195B226E00F76818 /* BusquedaPadre.m */,
-				8CAE5977195B252C00F76818 /* FacebookContact.h */,
-				8CAE5978195B252C00F76818 /* FacebookContact.m */,
+				8C959D2D195BE18C000435FD /* Views */,
+				8C959D2C195BE163000435FD /* Fachada */,
 				8CAE5954195B1D7000F76818 /* Images.xcassets */,
 				8CAE594E195B1D7000F76818 /* Main.storyboard */,
-				8CAE5971195B1E5000F76818 /* MotorBusqueda.h */,
-				8CAE5972195B1E5000F76818 /* MotorBusqueda.m */,
 				8CAE5943195B1D7000F76818 /* Supporting Files */,
-				8CAE5951195B1D7000F76818 /* ViewController.h */,
-				8CAE5952195B1D7000F76818 /* ViewController.m */,
 			);
 			path = Superclase;
 			sourceTree = "<group>";
@@ -474,6 +500,7 @@
 				8CAE596D195B1D7000F76818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8CAE596E195B1D7000F76818 /* Build configuration list for PBXNativeTarget "SuperclaseTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +509,7 @@
 				8CAE5970195B1D7000F76818 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
